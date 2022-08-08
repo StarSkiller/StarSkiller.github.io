@@ -1,0 +1,140 @@
+<!DOCTYPE html> <html prefix="og: https://ogp.me/ns#" class="no-js responsivelayout" lang="de" data-zpdebug="false" data-ptr="" data-pagename="System"> <head> <title>System</title> <meta http-equiv="content-type" content="text/html; charset=utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta name="description" content=""> <meta property="og:type" content="website"> <meta property="og:title" content="System"> <meta property="og:description" content=""> <meta property="og:url" content="https://hosting.zeta-producer.com/7394371591/system.html"> <meta property="twitter:card" content="summary_large_image"> <meta property="twitter:title" content="System"> <meta property="twitter:description" content=""> <meta name="keywords" content=""> <meta name="generator" content="Zeta Producer 16.5.0.0, ZP16F, 08.07.2022 15:24:30"> <meta name="robots" content="index, follow"> <link rel="canonical" href="https://hosting.zeta-producer.com/7394371591/system.html"> <link rel="preload" href="assets/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" type="font/woff2" crossorigin=""> <link rel="stylesheet" href="assets/bundle.css?v=637955969009599644"> <style>
+body {
+	font-weight: 200;
+}
+h1, h2, h3 {
+	font-weight: 100 !important;
+}
+.zpContainer a {
+	font-weight: 500;
+	text-transform: uppercase;
+}
+#logo {
+    text-align: left;
+    padding-left: 25px;
+}
+#logo img {
+	width: auto;
+    height: 58px;
+}
+#navigation ul li a,
+#navigation ul li a.plus {
+	padding-left: 25px;
+	background-image: none;
+}
+#navigation ul li a:hover {
+	text-decoration: underline !important;
+}
+#navigation ul li ul.submenu li a,
+#navigation ul li ul.submenu li.first a {
+	padding-left: 0;
+}
+#mobile-navigation ul li a {
+    background-color: transparent;
+}
+</style> <script src="assets/bundle.js?v=637955969009599644"></script> <noscript></noscript> <script>
+			function search1(){
+				if (document.forms.searchengine1.q.value.length == 0) {
+					alert("Bitte geben Sie einen Suchbegriff ein.");
+					return false;
+				}
+			}
+		</script> </head> <body id="metro-responsive"> <a id="top"></a> <div id="contentbox"> <div id="topbox"> <div class="pagewrap"> <form id="searchform" action="suche.html" method="get" name="searchengine1" onsubmit="return search1()"> <fieldset> <input id="searchfield" class="searchfield" name="q" type="text" value=""> <input class="searchbutton" name="submit" src="assets/stock-images/magnifier.png" type="image" alt="searchbutton"> </fieldset> </form> <div id="xmenu" class=""> <a class="xmenulink" href="index.html">Startseite</a> <a class="xmenulink" href="kontakt.html">Kontakt</a> <a class="xmenulink" href="impressum.html">Impressum</a> </div> <div class="clear"></div> <div id="mobile-menu"></div> </div> </div> <div class="pagewrap"> <div id="sidebar"> <div class="spacing"> <div id="logo"> <a href="index.html"><img src="assets/logo.svg" width="240" height="58" alt="index.html"></a> </div> <div id="navigation"> <ul> <li><a href="index.html">Startseite</a></li> <li><a href="leistungen.html">Leistungen</a></li> <li><a href="support.html">Support</a></li> <li><a href="team.html">Team</a></li> <li><a href="kontakt.html">Kontakt</a></li> <li><a href="impressum.html">Impressum</a></li> </ul> </div> <div> <div class="zparea " data-numcolumns="12" data-areaname="News" data-pageid="476"> </div> </div> </div> </div> <div id="content"> <div class="spacing"> <a id="a1366"></a> <div id="headerslider" class="flexslider"> <div class="flex-container"> <ul class="slides"> <li class="first"> <img loading="lazy" src="media/images/windows-large.jpg" width="600" height="315" alt=""> </li> </ul> </div> </div> <script>
+		$z(document).ready(function() {
+			var useCssAnimation = false;
+			
+			var autoplay = false;
+			if ( $z("body").hasClass("zpreducemotion") && 'fade' !== 'fade' ){  // don't allow moving animations
+				autoplay = false;
+			}
+			
+			function initSlider(){
+				console.log("Num Headers: 1");
+				$z('#headerslider .flex-container').flexslider({
+					useCSS: useCssAnimation,
+					keyboard: true,
+					itemMargin: 0,
+					animation: 'fade',
+					controlsContainer: '#headerslider.flexslider',
+					slideshow: autoplay,
+					slideshowSpeed: 7000,
+					directionNav: false, touch: false,
+					controlNav: false,
+					randomize: false,
+					
+					pauseOnHover: true,
+					smoothHeight: true,
+					prevText: "zur&#252;ck",
+					nextText: "weiter"
+				});
+				$z('#headerslider.flexslider').addClass("inited");
+			}
+			
+			if ( $z('#headerslider .flex-container ul.slides li img').length > 0 ){
+				// init flexslider after 1st image has loaded, so have dimensions as quickly as possible without having to wait too long on window loaded or such and can start right with doc ready
+				$z('#headerslider .flex-container ul.slides li img').first().one("load", initSlider).each(function() {
+					if(this.complete) $z(this).trigger('load');
+				}); // .each() is to work around a browser bugs which don't fire load() for cached images http://stackoverflow.com/a/3877079
+			}
+			else{
+				// also init flexslider if it doesn't contain images and is text only
+				initSlider();
+			}
+			
+			// activate links for individual slideshow
+			$z('#headerslider .flex-container ul.slides li[data-clickurl]').css("cursor","pointer");
+			$z('#headerslider .flex-container ul.slides li[data-clickurl]').click(function (event){
+				// Because this script captures clicks for a container, it will also fire when a regular link inside the container 
+				// is clicked. Therefore, we check below, if a regular link i.e. <a href="#"> was the target of the click.
+				// Depending on the browser used, event.target might not be available, but event.srcElement would…
+				var targ;
+				if (event.target){
+					targ = event.target;
+				}
+				else if (event.srcElement) {
+					targ = event.srcElement;
+				}
+				if (targ.nodeName == "A") {
+					// a regular link i.e. in a Caption was clicked. Return early, so the link's href doesn't get overridden
+					return;
+				}
+				
+				if ( $z(this).data("clicktarget") ){
+					window.open($z(this).data("clickurl"), $z(this).data("clicktarget"));
+				}
+				else{
+					window.location = $z(this).data("clickurl");
+				}
+				event.preventDefault;
+				return false;
+			});
+		});
+  	</script> <div> <div class="zparea zpgrid" data-numcolumns="" data-areaname="Standard" data-pageid="476"> </div> </div> </div> </div> <div class="clearx"></div> </div> <div id="footerbox"> <div class="pagewrap"> <div> &copy; 2022 Marco Unger - <a href="https://www.zeta-producer.com/de/index.html" target="_blank" class="zp" rel="sponsored nofollow">Website erstellt mit www.Zeta-Producer.com</a> </div> </div> </div> </div> <div id="mobile-navigation"> <ul class="zpmarkactive default out"><li class="zpnodefaults"><a href="index.html" data-isredirected="false">Startseite</a></li><li class="zpnodefaults"><a href="leistungen.html" data-isredirected="false">Leistungen</a></li><li class="zpnodefaults"><a href="support.html" data-isredirected="false">Support</a></li><li class="zpnodefaults"><a href="team.html" data-isredirected="false">Team</a></li><li class="zpnodefaults"><a href="kontakt.html" data-isredirected="false">Kontakt</a></li><li class="zpnodefaults"><a href="impressum.html" data-isredirected="false">Impressum</a></li></ul> <script>
+$z(document).ready(function(){
+	// we find the active page's a-tag and then walk upwards the dom marking the respective parent li as active/open
+	$z('ul.zpmarkactive.default li a.active').parents('li').each(function(index){
+		var that = this;
+		// do not add open class to immediate parent li
+		if ( index > 0 ){
+			$z(that).addClass('');
+		}
+		$z(that).addClass('active');
+		//$z(that).find('> a').addClass('active');
+	});
+	$z("ul.zpmarkactive.default").removeClass("zpmarkactive");
+	
+	/*
+	$z("ul.zpmarkactive.default li:has(a.active)").addClass("active");
+	$z("ul.zpmarkactive.default li.haschilds > a").addClass("haschilds");
+	$z("ul.zpmarkactive.default li.haschilds:has(a.active)").addClass("active");
+	$z("ul.zpmarkactive.default li.active > a").addClass("active");
+	
+	$z("ul.zpmarkactive.default").removeClass("zpmarkactive")
+	*/
+});
+</script> </div> <div id="left"></div> <div id="right"></div> 
+<!--
+* Layout: Metro Responsive
+* $Id: default.html 2022-06-21 13:31:16 +0200 Stefan S  b783691aa5de61d0142ab29862f7cdef01cc3b55 $
+-->
+ </body> </html>
