@@ -1,0 +1,67 @@
+.cea-grid {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
+
+.cea-post-lists ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  transition: all ease 0.23s;
+}
+ul.cea-team-social-media li label {
+  cursor: pointer;
+}
+.wp-block-contact-form-7-contact-form-selector.ct-newsletter-blockwithform input,
+.wp-block-contact-form-7-contact-form-selector.ct-banner-contactform input {
+  width: 100%;
+  border-radius: 0;
+  margin-bottom: 10px;
+}
+.wp-block-contact-form-7-contact-form-selector.ct-newsletter-blockwithform input.wpcf7-form-control.wpcf7-submit,
+.wp-block-contact-form-7-contact-form-selector.ct-banner-contactform input.wpcf7-form-control.wpcf7-submit {
+  border-radius: 0;
+  border: 0;
+}
+.wc-block-grid.wp-block-product-on-sale.wc-block-product-on-sale.has-4-columns.ct-patterns-onsaleproducts .attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
+  height: 360px;
+}
+.wc-block-grid.wp-block-product-on-sale.wc-block-product-on-sale.has-4-columns.ct-patterns-onsaleproducts .wc-block-grid__product-title {
+  font-size: 18px;
+  margin-top: 25px;
+}
+.wp-block-group.fota-popup-modal {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 9999;
+  align-items: center;
+  display: none;
+}
+.wp-block-group.fota-popup-modal.active {
+  display: flex;
+}
+.wp-block-group.fota-popup-content {
+  position: relative;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.45);
+}
+.wp-block-buttons.fota-modal-close .wp-block-button {
+  position: absolute;
+  right: -16px;
+  top: -22px;
+}
+.fota-popup-button {
+  transition: all ease 0.43s;
+  -moz-transition: all ease 0.43s;
+  -webkit-transition: all ease 0.43s;
+}
+.fota-popup-button:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+}

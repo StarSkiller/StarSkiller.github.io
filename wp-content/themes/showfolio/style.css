@@ -1,0 +1,70 @@
+/*
+Theme Name: Showfolio
+Author: CozyThemes
+Author URI: https://cozythemes.com/
+Description: Showfolio is a personal portfolio child theme of FotaWP, designed specifically for freelancers, creative professionals, and artists to showcase their work with style and simplicity. Inheriting all the powerful features of FotaWP, Showfolio offers a sleek and minimalist design tailored for personal portfolios, allowing users to highlight their projects, skills, and achievements. With block-based full site editing, it makes it easy to create a visually striking and professional portfolio that reflects your unique personality and talents. Whether you're a designer, developer, or creative artist, Showfolio provides the perfect platform to display your work beautifully and effectively. Explore more features and demos at https://cozythemes.com/fotawp/
+Template: fotawp
+Version: 1.0.2
+Requires at least: 5.9
+Tested up to: 6.6
+Requires PHP: 7.0
+License: GPLv3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: showfolio
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, e-commerce, full-site-editing, block-patterns, full-width-template, rtl-language-support, threaded-comments, translation-ready, block-styles, wide-blocks
+*/
+
+nav.wp-block-navigation ul li a:hover,
+.wp-block-button.is-style-outline a:hover {
+  color: var(--wp--preset--color--secondary) !important;
+}
+.wp-block-cover.fotawp-cover-hover:hover .wp-block-cover__background {
+  background-color: var(--wp--preset--color--foreground) !important;
+}
+.showfolio-move-top {
+  margin-top: -110px !important;
+}
+.showfolio-move-bottom {
+  margin-bottom: -110px !important;
+}
+.showfolio-move-bottom img {
+  z-index: 1;
+  position: relative;
+}
+.showfolio-contact-form form input,
+.showfolio-contact-form form textarea {
+  background: transparent;
+  font-family: var(--wp--preset--font-family--space-grotesk) !important;
+  font-weight: 700 !important;
+  font-size: var(--wp--preset--font-size--large);
+  color: var(--wp--preset--color--foreground);
+  border-radius: 0px !important;
+  border: 0px !important;
+  border-bottom: 2px solid var(--wp--preset--color--foreground) !important;
+}
+.showfolio-contact-form form textarea {
+  height: 100px !important;
+}
+.showfolio-contact-form form input[type="submit"] {
+  background: transparent;
+  font-size: var(--wp--preset--font-size--large) !important;
+  font-family: var(--wp--preset--font-family--space-grotesk) !important;
+  border: none !important;
+  padding: 0px !important;
+  margin-top: 40px !important;
+}
+.showfolio-contact-form form input[type="submit"]:hover {
+  background: transparent !important;
+  cursor: pointer;
+  color: var(--wp--preset--color--secondary) !important;
+}
+.entry-content.wp-block-post-content a,
+.wp-block-comment-content a,
+p a,
+.wp-block-heading a {
+  text-decoration: underline;
+  color: var(--wp--preset--color--foregound-alt);
+}
+a {
+  color: var(--wp--preset--color--foregound-alt);
+}

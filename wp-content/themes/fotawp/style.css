@@ -1,0 +1,864 @@
+/*
+Theme Name: FotaWP
+Theme URI: https://cozythemes.com/fotawp/
+Author: CozyThemes
+Author URI: https://cozythemes.com/
+Description: FotaWP is a lightweight, block-based, multipurpose WordPress theme designed to be responsive, SEO-friendly, and optimized for speed. It seamlessly integrates with both Full Site Editing (FSE) and your favorite page builder, Elementor. With over 130+ pre-built ready-to-use patterns, more than 40+ advanced Elementor widgets, and 28+ pre-built demos that can be imported with just one click. It is fully compatible with your favorite page builders and plugins, including Elementor, Gutenberg, Yoast SEO, RankMath, Contact Form, Jetpack, WooCommerce, and more. With FotaWP's exceptional support and compatibility with both FSE and Elementor, users can take full control over their site and achieve stunning websites as per their design and requirements, even with zero coding knowledge. Users can redesign and reconstruct their site from scratch with the help of our professionally crafted patterns and demos. With its wide range of features and customization options, FotaWP is suitable for various niches such as agencies, small businesses, corporate entities, startups, home services, HVAC services, education and e-learning platforms, health and fitness centers, insurance services, e-commerce shops and stores (WooCommerce), product catalogue, entertainment and media platforms, magazines, news outlets, bloggers, vloggers, writers, authors, automobile businesses, travel agencies, real estate firms, online courses and learning management systems (LMS), digital marketing agencies, SEO agencies, web agencies, consulting firms, technology companies, cybersecurity experts, public speakers, social media influencers, freelancers, portfolios and galleries, gadgets and technology enthusiasts, charities and nonprofit organizations, restaurants and food cafes, hotels and resorts, colleges, schools, pet care services, gardening and agriculture ventures, photography studios, art and creative studios, and various other professional services. Whether you're a developer or just starting out, FotaWP provides step-by-step documentation, video tutorials, and top-notch support to assist you on your journey. Discover more about FotaWP at https://www.cozythemes.com/fotawp/.
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, e-commerce, full-site-editing, block-patterns, full-width-template, rtl-language-support, threaded-comments, translation-ready, block-styles, wide-blocks
+Version: 2.0.3
+Requires at least: 5.9
+Tested up to: 6.6
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: fotawp
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+input[type="submit"] {
+  transition: all ease 0.23s;
+  -o-transition: all ease 0.23s;
+  -moz-transition: all ease 0.23s;
+  -webkit-transition: all ease 0.23s;
+}
+form.comment-form {
+  border-radius: 20px;
+  margin-top: 24px;
+}
+.wp-block-post-comments-form {
+  border-radius: 10px;
+}
+form.comment-form input[type="email"],
+form.comment-form input[type="text"],
+form.comment-form input[type="url"],
+form.comment-form textarea {
+  border-radius: 5px;
+  border: 0;
+  margin: 12px 0 25px;
+}
+form.comment-form .form-submit.wp-block-button {
+  margin-top: 25px;
+}
+.wpcf7-form-control.wpcf7-text,
+.wpcf7-form-control.wpcf7-textarea,
+.wpcf7-form-control.wpcf7-number.wpcf7-validates-as-number,
+.wpcf7-form-control.wpcf7-select {
+  border-radius: 5px;
+  border: 1px solid #dad9d9;
+  padding: 15px;
+  width: 100%;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+.wpcf7-form-control.wpcf7-select {
+  appearance: none;
+  position: relative;
+}
+.wpcf7-form-control.wpcf7-select:after {
+  content: ">";
+  font-size: 20px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+form.wpcf7-form *::placeholder {
+  font-size: 14px;
+}
+form.wpcf7-form *::-moz-placeholder {
+  font-size: 14px;
+}
+form.wpcf7-form *::-webkit-input-placeholder {
+  font-size: 14px;
+}
+.wpcf7-form-control.has-spinner.wpcf7-submit {
+  background: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--foregound-alt);
+  border-radius: 5px;
+  border: 0;
+  font-size: 16px;
+  padding: 15px 40px;
+}
+.wpcf7-form-control.has-spinner.wpcf7-submit:hover {
+  background: var(--wp--preset--color--secondary);
+}
+.wp-block-comment-author-name {
+  font-weight: 600;
+}
+
+.wp-block-comment-date a {
+  color: var(--wp--preset--color--foregound);
+  font-size: 13px;
+}
+.wp-block-comment-template li {
+  margin-top: 50px;
+}
+.wp-block-comment-template li li {
+  margin-top: 10px;
+  padding-left: 60px;
+}
+a.comment-reply-link {
+  border: 1px solid;
+  padding: 5px 13px;
+  border-radius: 40px;
+  font-size: 13px;
+  opacity: 0.6;
+}
+.wp-block-post-comments-form {
+  margin-top: 30px;
+  display: inline-block;
+  width: 100%;
+}
+.woocommerce ul.products li.product a img {
+  border-radius: 5px;
+  height: 350px;
+  object-fit: cover;
+}
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product {
+  margin: 0 2.5% 2.992em 0;
+  width: 23.1%;
+}
+.woocommerce ul.products li.last,
+.woocommerce-page ul.products li.last {
+  margin-right: 0;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li {
+  border-radius: 0;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active:before,
+.woocommerce div.product .woocommerce-tabs ul.tabs li:before,
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active:after {
+  display: none;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li:after {
+  border: 0;
+}
+.woocommerce #reviews #comments ol.commentlist {
+  padding: 0;
+  margin-top: 20px !important;
+}
+.woocommerce-page .input-text {
+  padding: 11px 30px;
+  border: 1px solid #817e7e;
+  border-radius: 5px;
+}
+.wc-block-components-product-price {
+  font-size: 14px;
+  margin: 10px 0;
+}
+.wc-block-components-product-metadata__description {
+  margin: 10px 0;
+}
+.wc-block-cart-item__product .wc-block-components-product-name {
+  font-size: 17px;
+  font-weight: 600;
+}
+.wc-block-components-product-badge.wc-block-components-sale-badge {
+  background: #22ac24;
+  font-weight: 400;
+  padding: 5px 10px;
+  color: #fff;
+}
+.wc-block-cart-item__quantity .wc-block-cart-item__remove-link {
+  color: #fe7a7e !important;
+}
+.wc-block-cart-item__total-price-and-sale-badge-wrapper .wc-block-formatted-money-amount.wc-block-components-formatted-money-amount.wc-block-components-product-price__value {
+  font-size: 18px;
+  color: var(--wp--preset--color--primary);
+}
+.wp-block-contact-form-7-contact-form-selector.fotawp-footer-newsletter .wpcf7-form {
+  position: relative;
+}
+.wp-block-contact-form-7-contact-form-selector.fotawp-footer-newsletter .wpcf7-form .wpcf7-form-control-wrap {
+  padding: 0 !important;
+  width: 65% !important;
+}
+.wp-block-contact-form-7-contact-form-selector.fotawp-footer-newsletter .wpcf7-form input.wpcf7-form-control.wpcf7-text.wpcf7-email {
+  width: 100%;
+  line-height: 33px;
+  padding: 15px 20px 12px;
+  display: inline-block;
+  border-radius: 0;
+  border: 0;
+  margin: 0;
+}
+.wp-block-contact-form-7-contact-form-selector.fotawp-footer-newsletter .wpcf7-form .wpcf7-form-control.wpcf7-submit {
+  width: 35% !important;
+  background: var(--wp--preset--color--secondary);
+  height: 60px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 0;
+  border: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.wp-block-contact-form-7-contact-form-selector.fotawp-footer-newsletter .wpcf7-form .wpcf7-form-control.wpcf7-submit:hover {
+  opacity: 0.89;
+}
+
+.wp-block-contact-form-7-contact-form-selector.fotawp-footer-newsletter .wpcf7-form .wpcf7-not-valid-tip {
+  margin-top: 20px;
+}
+.wp-block-contact-form-7-contact-form-selector.fotawp-footer-newsletter .wpcf7-form .wpcf7-response-output {
+  margin: -25px 0 20px;
+}
+.wp-block-contact-form-7-contact-form-selector.fotawp-footer-newsletter {
+  width: 100%;
+  position: relative;
+}
+.wp-block-button__link.wp-element-button img {
+  margin: 0 0 -2px 12px;
+}
+.wp-block-group.fotawp-header-transparent {
+  background: transparent;
+  position: absolute;
+  width: 100%;
+}
+.wp-block-gallery.fotawp-brands-logos .wp-block-image img {
+  max-height: 40px;
+}
+
+.entry-content.wp-block-post-content a,
+.wp-block-comment-content a,
+p a,
+.wp-block-heading a {
+  text-decoration: underline;
+}
+.wp-block-button.fotawp-scrollto-top .wp-block-button__link.wp-element-button {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  display: inline-block;
+  z-index: 999;
+  text-indent: -5000px;
+  display: none;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.089);
+}
+.wp-block-button.fotawp-scrollto-top .wp-block-button__link.wp-element-button:after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  -webkit-mask-image: url(/wp-content/themes/fotawp/assets/images/up-arrow.svg);
+  mask-image: url(/wp-content/themes/fotawp/assets/images/up-arrow.svg);
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  top: 0;
+}
+.wp-block-button.fotawp-scrollto-top .wp-block-button__link.wp-element-button:hover:after {
+  background-color: var(--wp--preset--color--primary) !important;
+}
+.fotawp-contact-form .wpcf7-form-control.wpcf7-text,
+.fotawp-contact-form .wpcf7-form-control.wpcf7-textarea,
+.fotawp-contact-form .wpcf7-form-control.wpcf7-number.wpcf7-validates-as-number,
+.fotawp-contact-form .wpcf7-form-control.wpcf7-select {
+  border-radius: 0;
+  border: 0 solid var(--wp--preset--color--foreground);
+  padding: 15px;
+  width: 100%;
+  margin-top: 10px;
+  box-sizing: border-box;
+  background: var(--wp--preset--color--tertiary-light);
+}
+.wp-block-heading.is-style-fotawp-heading-transparentfill-outline-stroke {
+  -webkit-text-stroke: 1px var(--wp--preset--color--primary);
+  -webkit-text-fill-color: transparent;
+}
+.wp-block-heading.is-style-fotawp-heading-transparentfill-outline-stroke-tertiary {
+  -webkit-text-stroke: 1px var(--wp--preset--color--tertiary);
+  -webkit-text-fill-color: transparent;
+}
+.wp-block-heading.is-style-fotawp-heading-transparentfill-outline-stroke-secondary {
+  -webkit-text-stroke: 1px var(--wp--preset--color--secondary);
+  -webkit-text-fill-color: transparent;
+}
+.wp-block-heading.is-style-fotawp-heading-transparentfill-outline-stroke-heading {
+  -webkit-text-stroke: 1px var(--wp--preset--color--heading-color);
+  -webkit-text-fill-color: transparent;
+}
+.wp-block-heading.is-style-fotawp-heading-transparentfill-outline-stroke-foreground {
+  -webkit-text-stroke: 1px var(--wp--preset--color--foreground);
+  -webkit-text-fill-color: transparent;
+}
+.wp-block-group.fotawp-box-primary-hover:hover {
+  background-color: var(--wp--preset--color--primary) !important;
+  transform: scale(1.027);
+  -webkit-transform: scale(1.027);
+  -moz-transform: scale(1.027);
+}
+.wp-block-group.fotawp-box-secondary-hover:hover {
+  background-color: var(--wp--preset--color--secondary) !important;
+  transform: scale(1.027);
+  -webkit-transform: scale(1.027);
+  -moz-transform: scale(1.027);
+}
+.wp-block-cover.fotawp-cover-hover:hover img.wp-block-cover__image-background,
+.wp-block-cover.fotawp-cover-hover-dark:hover img.wp-block-cover__image-background {
+  transform: scale(1.035);
+}
+.wp-block-cover.fotawp-cover-hover .wp-block-cover__inner-container,
+.wp-block-cover.fotawp-cover-hover-dark .wp-block-cover__inner-container {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -100%;
+  transition: all ease 0.23s;
+  padding: 24px 24px 0;
+  box-sizing: border-box;
+}
+.wp-block-cover.fotawp-cover-hover:hover .wp-block-cover__inner-container,
+.wp-block-cover.fotawp-cover-hover-dark:hover .wp-block-cover__inner-container {
+  opacity: 1;
+  bottom: 30px;
+}
+.wp-block-cover.fotawp-cover-hover:hover .wp-block-cover__background {
+  background-color: var(--wp--preset--color--primary) !important;
+  opacity: 0.75;
+}
+.wp-block-cover.fotawp-cover-hover-dark:hover .wp-block-cover__background {
+  background-color: #000 !important;
+  opacity: 0.65;
+}
+.wp-block-query.fotawp-product-grids .wc-block-grid__product-onsale {
+  border: 0;
+  font-size: 12px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  color: var(--wp--preset--color--secondary);
+  padding: 0;
+}
+.woocommerce #review_form #respond textarea {
+  border: 1px solid;
+}
+.woocommerce div.product form.cart button.single_add_to_cart_button,
+.woocommerce div.product form.cart button[name="add-to-cart"] {
+  border-radius: 0;
+  padding: 7px 15px;
+}
+.woocommerce div.product form.cart div.quantity .qty {
+  border-radius: 0;
+  height: 14px;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active {
+  background: transparent;
+  border: 0;
+  color: var(--wp--preset--color--secondary);
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li {
+  border-radius: 0;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  margin: 0 24px 0 0;
+}
+.wp-block-woocommerce-product-details ul.wc-tabs {
+  border-bottom: 0;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs {
+  padding: 0;
+}
+.wc-block-components-product-image .wc-block-components-product-sale-badge--align-right {
+  right: 10px;
+  top: 10px;
+}
+.wc-block-components-product-image .wc-block-components-product-sale-badge--align-left {
+  left: 10px;
+  top: 10px;
+}
+.wp-block-button.fotawp-button-with-icon a {
+  display: flex;
+}
+.wp-block-button.fotawp-button-with-icon a:after {
+  content: "";
+  background-color: var(--wp--preset--color--primary);
+  -webkit-mask-image: url(/wp-content/themes/fotawp/assets/images/arrow_outward.svg);
+  mask-image: url(/wp-content/themes/fotawp/assets/images/arrow_outward.svg);
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  transition: all ease 0.23s;
+}
+.wp-block-button.fotawp-button-with-icon a:hover:after {
+  background-color: var(--wp--preset--color--secondary);
+  transform: scale(1.2) translateX(3px);
+}
+.woocommerce .wp-block-woocommerce-product-image-gallery span.onsale {
+  left: 10px;
+  top: 10px;
+  background: #fff;
+  color: var(--wp--preset--color--secondary);
+}
+.wc-block-grid__product-rating .star-rating span,
+.wc-block-grid__product-rating .wc-block-grid__product-rating__stars span,
+.woocommerce .star-rating span {
+  color: #e99500;
+}
+.wc-block-grid__product-rating .star-rating:before,
+.wc-block-grid__product-rating .wc-block-grid__product-rating__stars:before,
+.woocommerce .star-rating::before {
+  color: #ccc9c9;
+}
+.wp-block-group.fotawp-cta-box figure.wp-block-image.cta-icon {
+  transition: all ease 0.23s;
+}
+.wp-block-group.fotawp-cta-box:hover figure.wp-block-image.cta-icon {
+  transform: translateY(-10px);
+}
+
+@media (max-width: 768px) {
+  .fotawp-projects-columns.wp-block-columns .wp-block-column {
+    padding: 0px !important;
+  }
+  .fotawp-projects-columns.wp-block-columns .wp-block-column:first-child {
+    border-right: 0;
+  }
+}
+@media (max-width: 600px) {
+  nav.is-responsive.fotawp-navigation.wp-block-navigation ul {
+    padding: 0 20px;
+  }
+  nav.fotawp-navigation.wp-block-navigation li a {
+    line-height: 30px;
+    padding: 0;
+  }
+}
+.fotawp-search-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Modal styles */
+.fotawp-search-content {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+}
+
+.fotawp-search-button:hover,
+.fotawp-search-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.wp-block-cover.search-modal-cover .wp-block-search__button {
+  margin: 0;
+}
+.wp-block-cover.search-modal-cover .wp-block-search__input {
+  height: 64px;
+  padding-left: 20px;
+}
+button.fotawp-search-close {
+  width: 40px;
+  height: 40px;
+  font-size: 17px;
+  background: #fff;
+  border: 0;
+  border-radius: 50%;
+  color: var(--wp--preset--color--primary);
+  float: right;
+  font-weight: bold;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 0;
+}
+button.fotawp-search-close:hover {
+  color: #fff;
+  background: var(--wp--preset--color--secondary);
+}
+.wp-block-cover.search-modal-cover .wp-block-search__button:hover {
+  color: var(--wp--preset--color--secondary) !important;
+}
+.fotawp-search-modal .fotawp-search-button .wp-element-button {
+  position: relative;
+  font-size: 0 !important;
+}
+.fotawp-search-modal .fotawp-search-button {
+  padding: 0;
+  margin-bottom: -10px;
+}
+.fotawp-search-modal .wp-block-search__button svg {
+  height: 38px;
+  width: 38px;
+}
+.fotawp-search-modal .fotawp-search-button .wp-element-button:after,
+button.fotawp-search-close:before {
+  content: "";
+  background: var(--wp--preset--color--foregound-alt);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
+  display: inline-block;
+  mask-image: url(/wp-content/themes/fotawp/assets/images/icon_search.svg);
+  width: 18px;
+  height: 18px;
+  mask-size: 100%;
+}
+.fotawp-search-modal .fotawp-search-button .wp-element-button.has-foreground-color:after {
+  background: var(--wp--preset--color--foreground);
+}
+.fotawp-search-modal .fotawp-search-button .wp-element-button.has-primary-color:after {
+  background: var(--wp--preset--color--primary);
+}
+.fotawp-search-modal .fotawp-search-button .wp-element-button.has-secondary-color:after {
+  background: var(--wp--preset--color--secondary);
+}
+.fotawp-search-modal .fotawp-search-button .wp-element-button.has-tertiary-color:after {
+  background: var(--wp--preset--color--tertiary);
+}
+.fotawp-search-modal .fotawp-search-button .wp-element-button.has-heading-color-color:after {
+  background: var(--wp--preset--color--heading-color);
+}
+button.fotawp-search-close:before {
+  mask-image: url(/wp-content/themes/fotawp/assets/images/icon_close.svg);
+  background: var(--wp--preset--color--primary);
+}
+button.fotawp-search-close:hover:before {
+  background: var(--wp--preset--color--foregound-alt);
+}
+.wp-block-contact-form-7-contact-form-selector.fotawp-newsletter-2 input.wpcf7-form-control.wpcf7-email {
+  border-radius: 0;
+  height: 60px;
+  background: transparent;
+  border: 1px solid #c4c7ce;
+}
+.wp-block-contact-form-7-contact-form-selector.fotawp-newsletter-2 input.wpcf7-form-control.wpcf7-submit {
+  width: 100%;
+  height: 60px;
+  border-radius: 0;
+  margin-top: 15px;
+}
+.wp-block-contact-form-7-contact-form-selector.fotawp-request-form input.wpcf7-form-control.wpcf7-submit {
+  background: var(--wp--preset--color--background);
+  width: 100%;
+  border-radius: 4px;
+  border: 0;
+  height: 54px;
+}
+.wp-block-contact-form-7-contact-form-selector.fotawp-request-form input.wpcf7-form-control.wpcf7-submit:hover {
+  background: var(--wp--preset--color--background-alt);
+}
+.wp-block-contact-form-7-contact-form-selector.fotawp-request-form input.wpcf7-form-control {
+  border-radius: 4px;
+  border: 0;
+  min-height: 50px;
+}
+.wp-block-contact-form-7-contact-form-selector.fotawp-request-form textarea.wpcf7-form-control {
+  border: 0;
+  border-radius: 4px;
+  height: 130px;
+}
+.wp-block-contact-form-7-contact-form-selector.newsletter-style-center input.wpcf7-form-control.wpcf7-email {
+  text-align: center;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid;
+}
+.wp-block-contact-form-7-contact-form-selector.newsletter-style-center input.wpcf7-form-control.wpcf7-submit {
+  border-radius: 0;
+  margin-top: 20px;
+  margin-right: -24px;
+}
+.wp-block-contact-form-7-contact-form-selector.newsletter-style-center form.wpcf7-form {
+  text-align: center;
+}
+.wp-block-contact-form-7-contact-form-selector.newsletter-style-center .wpcf7-spinner {
+  margin: 0;
+}
+.wp-block-contact-form-7-contact-form-selector.fotawp-footer-newsletter-2 span.wpcf7-form-control-wrap {
+  width: 65%;
+  float: left;
+}
+.wp-block-contact-form-7-contact-form-selector.fotawp-footer-newsletter-2 input.wpcf7-form-control.wpcf7-email {
+  border-radius: 0;
+  height: 54px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.wp-block-contact-form-7-contact-form-selector.fotawp-footer-newsletter-2 input.wpcf7-form-control.wpcf7-submit {
+  width: 34%;
+  height: 54px;
+  border-radius: 0 !important;
+  border: 0;
+  margin-left: 1%;
+  float: left;
+  margin-top: 10px;
+}
+.wp-block-contact-form-7-contact-form-selector.freelancer-enquiry-form .freelance-form-half {
+  width: 48%;
+  float: left;
+}
+.wp-block-contact-form-7-contact-form-selector.freelancer-enquiry-form .freelance-form-half.right {
+  margin-left: 4%;
+}
+.wp-block-contact-form-7-contact-form-selector.freelancer-enquiry-form .freelance-form-half input.wpcf7-form-control {
+  border: 0;
+  border-radius: 0;
+  border-bottom: 2px solid #c7c7c7;
+  padding: 15px 0;
+}
+.wp-block-contact-form-7-contact-form-selector.freelancer-enquiry-form .freelance-form-half p {
+  margin: 10px 0;
+}
+.wp-block-contact-form-7-contact-form-selector.freelancer-enquiry-form textarea.wpcf7-form-control.wpcf7-textarea {
+  border-radius: 0;
+  border: 0;
+  border-bottom: 2px solid #c7c7c7;
+  padding: 0;
+  height: 120px;
+}
+.wp-block-contact-form-7-contact-form-selector.freelancer-enquiry-form input.wpcf7-form-control.wpcf7-submit {
+  border-radius: 50px;
+  margin-top: 20px;
+}
+.fotawp-sidebar-tags.wp-block-tag-cloud a {
+  background: #f6f6f6;
+  display: inline-block;
+  margin: 0 0 4px;
+  color: #444;
+  font-family: inherit;
+  padding: 3px 10px;
+}
+.fotawp-footer-tags.wp-block-tag-cloud a {
+  display: inline-block;
+  background: #4d4d4e;
+  padding: 3px 10px;
+  margin: 0 2px 4px 0;
+  color: #fff;
+}
+.fotawp-sidebar-tags.wp-block-tag-cloud a:hover,
+.fotawp-footer-tags.wp-block-tag-cloud a:hover {
+  background: var(--wp--preset--color--secondary);
+  color: #fff;
+}
+.fotawp-product-search.wp-block-search {
+  width: 490px;
+  background: #fff;
+  border-radius: 12px;
+}
+.fotawp-product-search.wp-block-search input.wp-block-search__input {
+  padding: 0 0 0 20px;
+}
+.wp-block-group.fotawp-nav-dropshadow {
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.04);
+  position: relative;
+}
+.wp-block-cover.fotawp-cover-alter span.wp-block-cover__background {
+  transition: all ease 0.23s;
+}
+.wp-block-cover.fotawp-cover-alter:hover span.wp-block-cover__background {
+  opacity: 0.8;
+  background-color: var(--wp--preset--color--primary) !important;
+}
+.wp-block-cover.fotawp-cover-alter:hover .wp-block-heading,
+.wp-block-cover.fotawp-cover-alter:hover p {
+  color: #fff !important;
+}
+.wp-block-contact-form-7-contact-form-selector.fotawp-newsletter-2.button-2 input.wpcf7-form-control.wpcf7-submit {
+  background: #6487e0;
+}
+.wp-block-contact-form-7-contact-form-selector.fotawp-newsletter-2.button-2 input.wpcf7-form-control.wpcf7-submit:hover {
+  background-color: var(--wp--preset--color--secondary);
+}
+
+.wp-block-group.fotawp-overlay-header:not(.block-editor-block-list__block) {
+  position: fixed;
+  width: 100%;
+  background: transparent !important;
+  z-index: 999;
+}
+.wp-block-group.fotawp-sticky-header.sticky-header-enabled {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+.wp-block-group.fotawp-sticky-header.sticky-header-enabled:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background-color: var(--wp--preset--color--overlay-header-bgcolor) !important;
+  top: 0;
+  opacity: 0.9;
+}
+.wp-block-group.fota-overlay-content {
+  position: relative;
+}
+.wp-block-contact-form-7-contact-form-selector.fotawp-appointment-form input.wpcf7-form-control.wpcf7-text {
+  height: 54px;
+  padding: 0 20px;
+  border: 1px solid #dcdcdc;
+}
+.wp-block-contact-form-7-contact-form-selector.fotawp-appointment-form input.wpcf7-form-control.wpcf7-date {
+  height: 54px;
+  width: 100%;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+.wp-block-contact-form-7-contact-form-selector.fotawp-appointment-form select.wpcf7-form-control {
+  height: 54px;
+}
+.wp-block-contact-form-7-contact-form-selector.fotawp-appointment-form input.wpcf7-form-control.wpcf7-submit {
+  width: 100%;
+  height: 54px;
+  border-radius: 5px;
+  border: 0;
+  margin-top: -10px;
+}
+.wp-block-contact-form-7-contact-form-selector.fotawp-appointment-form textarea.wpcf7-form-control.wpcf7-textarea {
+  height: 110px;
+  border-radius: 5px;
+}
+.wp-block-contact-form-7-contact-form-selector.fotawp-appointment-form {
+  margin-top: -7px;
+}
+.wp-block-contact-form-7-contact-form-selector.hvac-quote-form input.wpcf7-form-control.wpcf7-text,
+.wp-block-contact-form-7-contact-form-selector.hvac-quote-form textarea.wpcf7-form-control {
+  background: #f8f8f8;
+  border: 0;
+  border-radius: 0;
+  height: 54px;
+}
+.wp-block-contact-form-7-contact-form-selector.hvac-quote-form textarea.wpcf7-form-control {
+  height: 120px;
+}
+.wp-block-contact-form-7-contact-form-selector.hvac-quote-form input.wpcf7-form-control.wpcf7-submit {
+  width: 100%;
+  border-radius: 0;
+  height: 54px;
+  margin-top: 5px;
+}
+.fotawp-post-more-full.wp-block-read-more {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+.fotawp-post-more-full.wp-block-read-more.has-text-color.has-primary-color:hover {
+  background: var(--wp--preset--color--primary);
+  color: #fff !important;
+}
+.fotawp-post-more-full.wp-block-read-more.has-text-color.has-secondary-color:hover {
+  background: var(--wp--preset--color--secondary);
+  color: #fff !important;
+}
+nav.fotawp-post-pagination.wp-block-query-pagination .wp-block-query-pagination-numbers a,
+nav.fotawp-post-pagination.wp-block-query-pagination .wp-block-query-pagination-numbers span.page-numbers.current,
+nav.fotawp-post-pagination.wp-block-query-pagination a.wp-block-query-pagination-next,
+nav.fotawp-post-pagination.wp-block-query-pagination a.wp-block-query-pagination-previous {
+  border: 1px solid;
+  padding: 4px 13px;
+  font-size: 20px;
+}
+nav.fotawp-post-pagination.wp-block-query-pagination {
+  grid-gap: 0;
+}
+nav.fotawp-post-pagination.wp-block-query-pagination > .wp-block-query-pagination-next,
+nav.fotawp-post-pagination.wp-block-query-pagination > .wp-block-query-pagination-previous {
+  padding: 3px 13px 4px !important;
+}
+nav.fotawp-post-pagination.wp-block-query-pagination .wp-block-query-pagination-numbers span.page-numbers.current {
+  background: var(--wp--preset--color--primary);
+  color: #fff !important;
+  padding: 5px 13px !important;
+}
+.wp-block-cover.fotawp-portfolio-box span.wp-block-cover__background,
+.wp-block-cover.fotawp-portfolio-box img.wp-block-cover__image-background {
+  transition: all ease 0.23s;
+}
+.wp-block-cover.fotawp-portfolio-box:hover span.wp-block-cover__background {
+  opacity: 0.75 !important;
+}
+.wp-block-cover.fotawp-portfolio-box .wp-block-cover__inner-container {
+  opacity: 0;
+  transition: all ease 0.23s;
+  margin-bottom: -50%;
+}
+.wp-block-cover.fotawp-portfolio-box:hover .wp-block-cover__inner-container {
+  opacity: 1;
+  margin-bottom: unset;
+}
+.wp-block-cover.fotawp-portfolio-box:hover img.wp-block-cover__image-background {
+  transform: scale(1.1);
+}
+.wp-block-contact-form-7-contact-form-selector.fotahome-contact-form input.wpcf7-form-control,
+.wp-block-contact-form-7-contact-form-selector.fotahome-contact-form textarea.wpcf7-form-control {
+  border-radius: 0;
+  padding: 16px 0;
+  border: 0;
+  transition: all ease 0.23s;
+  border-bottom: 1px solid var(--wp--preset--color--border-color);
+}
+.wp-block-contact-form-7-contact-form-selector.fotahome-contact-form textarea.wpcf7-form-control {
+  height: 120px;
+}
+.wp-block-contact-form-7-contact-form-selector.fotahome-contact-form input.wpcf7-form-control.wpcf7-submit {
+  padding: 20px 30px;
+  border-radius: 60px;
+  margin-top: 15px;
+}
+.wp-block-contact-form-7-contact-form-selector.fotahome-contact-form ::placeholder {
+  color: var(--wp--preset--color--heading-color);
+}
+.wp-block-contact-form-7-contact-form-selector.fotahome-contact-form input.wpcf7-form-control:focus,
+.wp-block-contact-form-7-contact-form-selector.fotahome-contact-form textarea.wpcf7-form-control:focus {
+  padding: 16px;
+}
+a.wp-block-button__link.has-foregound-alt-color.has-primary-background-color:hover,
+a.wp-block-button__link.has-primary-color.has-background-background-color:hover,
+a.wp-block-button__link.has-primary-color.has-transparent-background-color:hover {
+  background: var(--wp--preset--color--secondary) !important;
+  color: #fff !important;
+  border-color: var(--wp--preset--color--secondary) !important;
+}
+a.wp-block-button__link.has-foregound-alt-color.has-primary-background-color:hover:after,
+a.wp-block-button__link.has-primary-color.has-background-background-color:hover:after,
+a.wp-block-button__link.has-primary-color.has-transparent-background-color:hover:after {
+  background: #fff !important;
+}
+@media (max-width: 520px) {
+  .fotawp-product-search.wp-block-search {
+    width: 100%;
+  }
+}
